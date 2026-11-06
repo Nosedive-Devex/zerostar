@@ -1,0 +1,15 @@
+:root { color-scheme: dark; background: #10131b; color: #f1f0f6; font: 17px/1.65 system-ui, sans-serif; }
+body { margin: 0; }
+header { border-bottom: 1px solid #35384b; }
+header a, main { display: block; max-width: 44rem; margin: auto; padding: 1.25rem; }
+header a { font-weight: 700; text-decoration: none; }
+main { padding-block: 2rem 4rem; }
+a { color: #c4b5fd; text-underline-offset: .18em; }
+h1, h2 { line-height: 1.2; }
+h1 { font-size: clamp(2rem, 6vw, 3.5rem); }
+.records { list-style: none; padding: 0; }
+.records li { border-top: 1px solid #35384b; padding: 1rem 0; }
+.records h2 { margin: 0; }
+code { overflow-wrap: anywhere; color: #cbd0de; }
+pre { overflow: auto; }
+footer { margin-top: 2rem; border-top: 1px solid #35384b; padding-top: 1rem; }

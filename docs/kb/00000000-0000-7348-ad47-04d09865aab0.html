@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KINGSMetaL · ZeroStar.IO</title>
+<link rel="stylesheet" href="../style.css">
+<header><a href="../index.html">✦ ZeroStar.IO</a></header>
+<main><article><h1 id="kingsmetal">KINGSMetaL</h1>
+<p>I want documentation that people can read, programs can navigate, and neither needs a particular application to keep. KINGSMetaL is the small convention I use to give ordinary Markdown documents a consistent identity and enough structure to form a knowledge base.</p>
+<p>The name is a mnemonic for the order of fields in YAML frontmatter: <strong>K</strong>ind, <strong>I</strong>d, <strong>N</strong>ame, <strong>G</strong>ist, <strong>S</strong>copes, <strong>Meta</strong>, <strong>L</strong>inks. The prose follows the closing <code>---</code> as normal Markdown.</p>
+<h2 id="the-fields">The fields</h2>
+<ul>
+<li><strong>kind</strong> says what sort of document this is. A vocabulary belongs to the knowledge base using it; the format does not prescribe every kind.</li>
+<li><strong>id</strong> is the document's permanent identity, a UUIDv7. Titles, names and storage locations can change without changing what document a reference identifies.</li>
+<li><strong>name</strong> is a short, human-friendly name. It need not carry the burden of permanent identity. Within a knowledge base, the pair of kind and name should identify one document.</li>
+<li><strong>gist</strong> is a compact statement of what the document says. It should carry enough meaning to decide whether to read the body, rather than merely repeat the title.</li>
+<li><strong>scopes</strong> identifies the repositories or other subjects the document applies to, when that context is useful.</li>
+<li><strong>meta</strong> holds structured fields specific to the kind or application.</li>
+<li><strong>links</strong> records relationships to other documents. Each entry names a document and gives the relationship a <code>rel</code>, so a reader or tool can tell why the link exists.</li>
+</ul>
+<p>The first four fields identify and summarize the document. Omit optional fields when they have nothing to say. These public philosophy documents generally need neither scopes nor meta.</p>
+<p>The field order is a reading convention: familiar placement makes documents easier to scan and their diffs easier to review. YAML parsers address keys by name, so reordering fields does not change their meaning. Use valid YAML, two-space indentation, and quote prose when writing by hand if punctuation could be misread.</p>
+<h2 id="a-document-is-a-file">A document is a file</h2>
+<p>Store a document as <code>kb/&lt;id&gt;.md</code>. Its frontmatter carries the identity; the filename makes finding it by identity straightforward. Its H1 is its display title, free to use capitalization such as KINGSMetaL without changing <code>name: kingsmetal</code>.</p>
+<p><a href="00000000-0000-7000-8000-0ebcccd7c601.html">Zerostar</a> describes the zero-timestamp identities used for these foundational documents.</p>
+<p><a href="00000000-0000-7cd9-a713-7acfa64365ee.html">CiaPoD</a> describes how I use this format to make a knowledge base express the desired state of software.</p>
+<p><a href="../index.html">All zerostars</a></p>
+</article><footer><code>00000000-0000-7348-ad47-04d09865aab0</code> · <a href='00000000-0000-7348-ad47-04d09865aab0.md'>Markdown source</a></footer></main>
+</html>
